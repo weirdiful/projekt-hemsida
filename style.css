@@ -1,4 +1,5 @@
 body {
+    font-family: "Sniglet", system-ui, sans-serif;
     margin: 0;
     height: 100vh;
     background: linear-gradient(to top, 
@@ -14,6 +15,18 @@ body {
     align-items: flex-end;
     justify-content: center;
     overflow: hidden;
+  }
+  
+  .sniglet-regular {
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .sniglet-extrabold {
+    font-family: "Sniglet", system-ui;
+    font-weight: 800;
+    font-style: normal;
   }
   
 
@@ -101,10 +114,9 @@ body {
 }
 
 .site-header h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0;
   color: #3b2e2a;
-  font-family: 'Arial Rounded MT Bold', sans-serif;
 }
 
 .order-section {
