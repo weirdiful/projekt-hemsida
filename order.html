@@ -4,17 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
   <title>Boba Garden</title>
 </head>
 <body>
   <header class="site-header">
+    <div class="header-logo">
     <img src="logo.png" alt="Boba Garden logotyp" class="logo" />
     <h1 class="sniglet-regular">BOBA GARDEN</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">STARTSIDA</a></li>
+        <li><a href="order.html">BESTÄLL HÄR</a></li>
+        <li><a href="login.html">PERSONAL</a></li>
+      </ul>
+    </nav>
+
   </header>
-  </header>
 
 
-
+<div class="order-form">
   <main class="order-section">
     <h2>Skapa din Bubble Tea-beställning</h2>
     <form id="orderForm">
@@ -62,6 +74,8 @@
     </form>
     <p id="feedback"></p>
   </main>
+</div>
+
     <div class="bubbles">
         <div class="bubble dark2"></div> <!-- 1 -->
         <div class="bubble"></div>       <!-- 2 -->
