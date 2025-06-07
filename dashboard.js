@@ -5,7 +5,7 @@ if (!token) {
 }
 
 async function fetchOrders() {
-  const res = await fetch("https://din-backend-url.onrender.com/api/orders", {
+  const res = await fetch("https://projekt-backend-x0s8.onrender.com/api/orders", {
     headers: { Authorization: `Bearer ${token}` }
   });
   const orders = await res.json();
@@ -37,7 +37,7 @@ async function fetchOrders() {
 }
 
 async function fetchHistory() {
-  const res = await fetch("onrender.com/api/orders/history", {
+  const res = await fetch("https://projekt-backend-x0s8.onrender.com/api/orders/history", {
     headers: { Authorization: `Bearer ${token}` }
   });
   const orders = await res.json();
