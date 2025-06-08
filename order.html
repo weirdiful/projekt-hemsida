@@ -26,55 +26,70 @@
   </header>
 
 
-<div class="order-form">
-  <main class="order-section">
-    <h2>Skapa din Bubble Tea-beställning</h2>
-    <form id="orderForm">
-      <label>Ditt namn:
-        <input type="text" name="customer_name" required />
-      </label>
-
-      <label>Bas:
-        <select name="base" required>
-          <option value="svart te">Svart te</option>
-          <option value="grönt te">Grönt te</option>
-          <option value="mjölkte">Mjölkte</option>
-        </select>
-      </label>
-
-      <label>Smak:
-        <select name="flavor" required>
-          <option value="mango">Mango</option>
-          <option value="jordgubb">Jordgubb</option>
-          <option value="passionsfrukt">Passionsfrukt</option>
-        </select>
-      </label>
-
-      <label>Topping:
-        <select name="topping">
-          <option value="tapioka">Tapioka</option>
-          <option value="jelly">Jelly</option>
-          <option value="inga">Inga</option>
-        </select>
-      </label>
-
-      <label>Storlek:
-        <select name="size" required>
-          <option value="small">Liten</option>
-          <option value="medium">Mellan</option>
-          <option value="large">Stor</option>
-        </select>
-      </label>
-
-      <label>Meddelande (valfritt):
-        <textarea name="note" placeholder="T.ex. ingen is"></textarea>
-      </label>
-
-      <button type="submit">Skicka beställning</button>
-    </form>
-    <p id="feedback"></p>
-  </main>
-</div>
+  <div class="order-form">
+    <main class="order-section">
+      <h2>Skapa din Bubble Tea-beställning</h2>
+      <form id="orderForm">
+        <label>Ditt namn:
+          <input type="text" name="customer_name" required />
+        </label>
+  
+        <label>Dryckestyp:</label>
+        <div class="drink-type-selector" id="drinkTypeContainer"></div>
+        <input type="hidden" name="drink_type" id="drinkTypeInput" required />
+  
+        <label>Smak:
+          <select name="flavor" id="flavorSelect" required></select>
+        </label>
+  
+        <label>Sötma:
+          <select name="sweetness" required>
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50" selected>50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+  
+        <label>Is:
+          <select name="ice" required>
+            <option value="ingen">Ingen is</option>
+            <option value="lite">Lite is</option>
+            <option value="normal" selected>Normal is</option>
+            <option value="extra">Extra is</option>
+          </select>
+        </label>
+  
+        <label>Boba:
+          <select name="boba" required>
+            <option value="ingen">Ingen boba</option>
+            <option value="tapioka">Tapioka</option>
+            <option value="popping_jordgubb">Popping Boba - Jordgubb</option>
+            <option value="popping_mango">Popping Boba - Mango</option>
+            <option value="popping_passion">Popping Boba - Passionsfrukt</option>
+            <option value="jelly">Jelly</option>
+          </select>
+        </label>
+  
+        <label>Extra topping (valfritt):
+          <select name="extra_topping">
+            <option value="">Inga</option>
+            <option value="gräddskum">Gräddskum</option>
+            <option value="kokosjelly">Kokosjelly</option>
+            <option value="aloe_vera">Aloe Vera</option>
+          </select>
+        </label>
+  
+        <label>Meddelande (valfritt):
+          <textarea name="note" placeholder="T.ex. ingen is, dubbla boba, etc."></textarea>
+        </label>
+  
+        <button type="submit">Skicka beställning</button>
+      </form>
+      <p id="feedback"></p>
+    </main>
+  </div>
 
     <div class="bubbles">
         <div class="bubble dark2"></div> <!-- 1 -->
